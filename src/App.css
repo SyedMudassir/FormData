@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+.form-container input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #101010;
+  padding: 5px; 
+  margin:5px 0px;
+  width:250px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button.submit-btn {
+  width: 125px;
+  color: #fff;
+  background: #101010;
+  border-radius: 5px;
+  height: 25px;
+  margin-top: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background:#fff;
+  border-radius:5px;
+  box-shadow: 5px 5px 15px 20px rgb(0 0 0 / 10%);
+  width: 300px;
+  margin: 50px auto;
+  padding: 25px;
 }
-
-.App-link {
-  color: #61dafb;
+.form-data table{
+  width: 768px;
+  margin: 0 auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.form-data thead th,.form-data tbody tr:nth-child(even){
+  background:#dcdcdc;
+ 
+}
+.form-data tbody tr td,.form-data thead th {
+ padding:5px;
+  color:#101010;
+  text-align:left;
+}
+.form-data tbody tr td:first-child{
+  text-transform:capitalize;
+}
+@media only screen and (max-width:768px){
+  .form-data table{
+    width: 95%;
   }
 }
